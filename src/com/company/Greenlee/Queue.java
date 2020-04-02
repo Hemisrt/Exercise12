@@ -24,7 +24,7 @@ public class Queue<E> {
             throw new QueueEmptyException();
         }
 
-        E returnElement = elements[index - 1];
+        E returnElement = elements[size - index];
         index--;
         return returnElement;
     }
